@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fba492f9-4d94-4ebb-a466-914a1cfcc373}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include=".env.development" />
+    <Content Include="api\account.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="api\auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="api\blogs.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="api\tags.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\Alert.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\blogs\post-controller.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\floaters\publish-floater.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\forms\TagSearch.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\forms\TagSelect.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\Loader.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\modals\publish-modal.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\modals\withModal.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\Popover.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="context\AppContext.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="context\auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="context\blog.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="helpers\keyHandlers.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="helpers\populateBlogModel.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="helpers\UserStore.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="helpers\Fetch.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="libman.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="pages\account\dashboard.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="components\account\profile.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="pages\auth\signup.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="pages\editor.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\christian.jpg" />
+    <Content Include="README.md" />
+    <Content Include="pages\about.js" />
+    <Content Include="pages\blog.js" />
+    <Content Include="pages\index.js" />
+    <Content Include="pages\_app.js" />
+    <Content Include="pages\_document.js" />
+    <Content Include="shared\AuthLayout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="shared\constants.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="shared\Footer.js" />
+    <Content Include="shared\Header.js" />
+    <Content Include="shared\Layout.js" />
+    <Content Include="shared\Sidebar.js" />
+    <Content Include="shared\withAuth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\Copyright.js" />
+    <Content Include="src\Link.js" />
+    <Content Include="src\ProTip.js" />
+    <Content Include="src\theme.js" />
+    <Content Include="styles\app.css" />
+    <Content Include="components\editor\BlogEditor.js" />
+    <Content Include="components\editor\Components.js" />
+    <Content Include="components\blogs\FeaturedPost.js" />
+    <Content Include="pages\auth\login.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Client" />
+    <Folder Include="components" />
+    <Folder Include="components\blogs" />
+    <Folder Include="components\forms\" />
+    <Folder Include="components\editor\" />
+    <Folder Include="components\modals\" />
+    <Folder Include="components\floaters\" />
+    <Folder Include="components\account\" />
+    <Folder Include="context\" />
+    <Folder Include="helpers\" />
+    <Folder Include="api\" />
+    <Folder Include="pages\blog\" />
+    <Folder Include="public\" />
+    <Folder Include="pages" />
+    <Folder Include="pages\auth" />
+    <Folder Include="pages\account\" />
+    <Folder Include="shared" />
+    <Folder Include="src" />
+    <Folder Include="styles" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
