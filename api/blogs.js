@@ -21,7 +21,7 @@ export async function getLatestBlogs() {
 }
 
 export async function getBlogsByTag(tagPk) {
-    var res = await Fetch("/readers/" + tagPk, "get");
+    var res = await Fetch("/readers/tag/" + tagPk, "get");
     return res;
 
 }
