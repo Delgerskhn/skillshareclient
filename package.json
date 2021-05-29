@@ -16,7 +16,7 @@
     "is-hotkey": "^0.1.6",
     "is-url": "^1.2.2",
     "js-cookie": "^2.2.1",
-    "next": "latest",
+    "next": "^10.2.3",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
